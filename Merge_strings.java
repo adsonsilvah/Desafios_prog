@@ -13,7 +13,15 @@ public class Merge_strings {
         int numCharW2 = word2.length();
 
         if (numCharW1 == numCharW2){
-            System.out.print("logica da concatenação aqui");
+           char [] word1Array = word1.toCharArray();
+           char [] word2Array = word2.toCharArray();
+            System.out.print(word1Array[0]);
+            System.out.println();
+           for( char i : word1Array){
+               for(char j : word2Array){
+                   System.out.print(word1Array[i]+ "" +word2Array[j]); //corrigir ArrayIndexOutOfBoundsException
+               }
+           }
         }
         else{
             System.out.print("outra logica da concatenação aqui");
